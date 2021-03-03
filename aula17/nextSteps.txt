@@ -1,0 +1,15 @@
+functions, callbacks, funções anonimas, arrows, iife
+objetos
+modularização
+RegEx
+jSON
+AJAX
+NodeJS
+
+declarar objeto em JS:
+let amigo = {}, ex: let amigo{nome:'José', sexo:'M', peso:85.4, engordar(p){}} //engordar é uma função kkkk, é o método no caso.
+
+NOVO CURSO HTML5 E CSS, MODERNO
+BANCO DE DADOS MYSQL
+WORDPRESS
+PYTHON

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background: gray;
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class='msg'>Clique em mim.</div>
+    <script>
+        /*DOM = Document Object Model
+            ÁRVORE DOM(parent, child):
+                window -> location, document, history
+                document -> html
+                html -> head, body
+                head -> meta, title
+                body -> h1, p, p, div
+                p-> strong
+        */
+
+        /* Elementos podem ser acessados por: 
+            marca, ID, nome, classe, seletor.
+        */
+
+        /* marca-> getElementsByTagName() */
+        var p1 = window.document.getElementsByTagName('p')[1] //como tem 2 parágrafos, pega o primeiro apenas.
+        //window.document.write('Está escrito assim: ' + p1.innerText.toLowerCase())
+        //window.document.write(p1.innerHTML)
+        //window.alert(p1.innerText)
+
+        /* ID-> getElementsByID() */
+        /* nome-> getElementsByName() */
+        /* classe-> getElementsByClassName() */
+
+        /* var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */   
+       
+        /* var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Chama no desque xele.'
+        */
+
+        // window.document.getElementsByClassName('msg')[0]
+
+        //quando o elements for em PLURAL, coloca o identificador de array no final, pra identificar o elemento que vc quer.
+
+        /* selector -> querySelector()
+                       querySelectorAll()
+        */
+       var d = window.document.querySelector('div.msg') // TODA DIV É REPRESENTADA PELA #, ID É #, TODA CLASSE É REPRESENTADA PELO .
+       d.style.background = 'blue'
+
+    </script>
+</body>
+</html>

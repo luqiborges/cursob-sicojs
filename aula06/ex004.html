@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+
+        //colocar 2 casas em ponto flutuante:
+        //n1 = 1545.5 -> n1.toFixed(2)
+        //para trocar ponto por vírgula -> n1.toFixed(2).replace('.', ',') na apresentação
+
+        //mostrar uma quantia monetária:
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>
+
+

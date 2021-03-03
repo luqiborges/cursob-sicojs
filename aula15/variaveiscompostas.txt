@@ -1,0 +1,26 @@
+Variáveis compostas são ARRAYS
+
+UM ARRAY, VETOR, OU VARIÁVEL COMPOSTA é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
+
+a[0] = 1
+a[0] -> elemento
+1 -> valor 
+0 -> indice/key
+
+declaração:
+let num = [] ou let num = [1, 2, 3, por exemplo...]
+
+PARA AUMENTAR A POSIÇÃO NO ARRAY
+
+let num = [1, 2, 3]
+num[3] = 4, o JS percebe e cria pra você
+ou
+num.push(9)
+
+num.length é um atributo, não tem parenteses
+num.lenght==5 no exemplo acima.
+
+num.sort() -> ordena o vetor em orden crescente.
+
+num.indexOf(7) -> procura o index cujo valor é 7.
+se retornar o valor -1, ele pesquisou dentro do vetor mas não encontrou.

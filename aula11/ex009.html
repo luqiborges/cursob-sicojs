@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra sua nacionalidade</h1>
+    <p>Qual o país em que você está vivendo? <input type="text" name="livingc" id="livingc"></p>
+    <p>Qual o país em que você nasceu? <input type="text" name="bornc" id="bornc"></p>
+    <input type="button" value="Enviar Resposta" onclick="gerarResultado()">
+    <div id='res'></div>
+
+    <script>
+        function gerarResultado(){
+            var countryl = window.document.getElementById('livingc').value
+            var countryb = window.document.getElementById('bornc').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = ''
+            if(countryl == countryb){
+                res.innerHTML += `<p>Você está morando no país que nasceu!</p>`
+                res.innerHTML += `<p>Você nasceu em ${countryb} e também mora em ${countryl}.</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você não mora mais no seu país de origem!</p>`
+                res.innerHTML += `<p>Você nasceu em ${countryb}, mas mora em ${countryl}.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+operadores aritmeticos: +, -, *, /, % e **.
+ordem de precedência: (), **, (*, /, %), +, -.
+
+relacionais: >, <, >=, <=, ==, !=.
+geram resultados boolean.
+
+no JS:
+5 == 5 -> true
+5 == '5' -> true tbm.
+5 === '5' -> false, testa se são idênticos: mesmo valor e mesmo tipo
+5 === 5 -> true
+então:
+5 != '5' -> false
+5 !== '5' -> true, desigual restrito.
+
+operadores lógicos: !, &&, || (nessa ordem de prioridade).
+! -> negação
+&& -> conjunção (e)
+|| -> disjunção (ou)
+
+ORDEM DE OPERADORES: aritmeticos -> relacionais -> lógicos
+
+operador ternário(the bad ass)
+ ? : em uma mesma expressão (3 partes)
+ TESTE ? TRUE : FALSE
